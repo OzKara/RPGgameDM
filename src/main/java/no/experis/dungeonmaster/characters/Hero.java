@@ -20,6 +20,14 @@ public abstract class Hero {
         this.levelAttributes = startingAttributes;
     }
 
+    public void equip(Item item) {
+        Slot slot = item.getSlot();
+        if (equipment.containsKey(slot)) {
+            //unequip and put item
+        }
+        equipment.put(slot, item);
+    }
+
     public enum Slot {
         WEAPON, BODY, LEGS, HEAD
     }

@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="285e0877-2362-495d-bd21-2eab8ab3948c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Archer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Barbarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Swashbuckler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Wizard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="285e0877-2362-495d-bd21-2eab8ab3948c" name="Changes" comment="Added project structure, created classes with constructors.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/WeaponType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,19 +59,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="no.experis.dungeonmaster.characters" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,8 +91,17 @@
       <option name="presentableId" value="Default" />
       <updated>1691758160450</updated>
       <workItem from="1691758161234" duration="1330000" />
-      <workItem from="1692013648580" duration="3857000" />
+      <workItem from="1692013648580" duration="5195000" />
+      <workItem from="1692103008376" duration="2382000" />
     </task>
+    <task id="LOCAL−00001" summary="Added project structure, created classes with constructors.">
+      <option name="closed" value="true" />
+      <created>1692017760415</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1692017760415</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,5 +117,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added project structure, created classes with constructors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added project structure, created classes with constructors." />
   </component>
 </project>
