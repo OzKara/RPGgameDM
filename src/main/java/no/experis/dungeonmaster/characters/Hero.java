@@ -1,5 +1,6 @@
 package no.experis.dungeonmaster.characters;
 
+import no.experis.dungeonmaster.enums.Slot;
 import no.experis.dungeonmaster.items.Item;
 import no.experis.dungeonmaster.utilities.HeroAttribute;
 
@@ -28,7 +29,4 @@ public abstract class Hero {
         equipment.put(slot, item);
     }
 
-    public enum Slot {
-        WEAPON, BODY, LEGS, HEAD
-    }
 }

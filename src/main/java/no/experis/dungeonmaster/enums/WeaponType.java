@@ -1,4 +1,4 @@
-package no.experis.dungeonmaster.items;
+package no.experis.dungeonmaster.enums;
 
 public enum WeaponType {
     HATCHET,

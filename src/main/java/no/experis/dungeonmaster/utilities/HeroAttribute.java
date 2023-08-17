@@ -1,5 +1,7 @@
 package no.experis.dungeonmaster.utilities;
 
+import no.experis.dungeonmaster.enums.AttributeType;
+
 import java.util.jar.Attributes;
 
 public class HeroAttribute {
@@ -11,10 +13,6 @@ public class HeroAttribute {
         this.strength = strength;
         this.intelligence = intelligence;
         this.dexterity = dexterity;
-    }
-
-    public enum AttributeType {
-        STRENGTH, INTELLIGENCE, DEXTERITY
     }
 
     public void addAttributes(HeroAttribute other) {

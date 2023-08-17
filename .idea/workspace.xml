@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="285e0877-2362-495d-bd21-2eab8ab3948c" name="Changes" comment="Added project structure, created classes with constructors.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/WeaponType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/enums/ArmorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/enums/AttributeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/enums/Slot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/enums/WeaponType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -63,6 +68,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
