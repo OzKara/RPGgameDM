@@ -1,57 +1,57 @@
 package no.experis.dungeonmaster.utilities;
 
-import no.experis.dungeonmaster.enums.AttributeType;
-
-import java.util.jar.Attributes;
+import java.util.Objects;
 
 public class HeroAttribute {
     private int strength;
     private int intelligence;
     private int dexterity;
 
-    public HeroAttribute(int strength,int dexterity, int intelligence) {
+    public HeroAttribute(int strength, int dexterity, int intelligence) {
         this.strength = strength;
-        this.intelligence = intelligence;
         this.dexterity = dexterity;
-    }
-
-    public void addAttributes(HeroAttribute other) {
-        this.strength += strength;
-        this.dexterity += dexterity;
-        this.intelligence += intelligence;
-    }
-
-    public void increaseAttribute(AttributeType attributeType, int amount) {
-        switch (attributeType) {
-            case STRENGTH -> {
-                strength += amount;
-                break;
-            }
-            case DEXTERITY -> {
-                dexterity += amount;
-                break;
-            }
-            case INTELLIGENCE -> {
-                intelligence += amount;
-                break;
-            }
-        }
+        this.intelligence = intelligence;
     }
 
     public int getStrength() {
+
         return strength;
     }
 
-    public int getIntelligence() {
-        return intelligence;
-    }
-
     public int getDexterity() {
+
         return dexterity;
     }
 
+    public int getIntelligence() {
+
+        return intelligence;
+    }
+
+    public void increaseStrength(int amount) {
+        strength += amount;
+    }
+
+    public void increaseDexterity(int amount) {
+
+        dexterity += amount;
+    }
+
+    public void increaseIntelligence(int amount) {
+
+        intelligence += amount;
+    }
+
     @Override
-    public String toString() {
-        return "| strength=" + strength + " | intelligence=" + intelligence + " | dexterity=" + dexterity + " |";
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        HeroAttribute that = (HeroAttribute) o;
+        return strength == that.strength && intelligence == that.intelligence && dexterity == that.dexterity;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(strength, intelligence, dexterity);
     }
 }

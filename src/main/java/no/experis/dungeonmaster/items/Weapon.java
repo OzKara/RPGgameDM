@@ -7,14 +7,10 @@ public class Weapon extends Item {
     private final WeaponType weaponType;
     private final int weaponDamage;
 
-    public Weapon(int requiredLevel, WeaponType weaponType, int weaponDamage) {
-        super(requiredLevel);
+    public Weapon(int requiredLevel, WeaponType weaponType, int weaponDamage, String name) {
+        super(name, requiredLevel, Slot.WEAPON);
         this.weaponType = weaponType;
         this.weaponDamage = weaponDamage;
-    }
-
-    public Slot getSlot() {
-        return Slot.WEAPON;
     }
 
     public WeaponType getWeaponType() {
@@ -23,5 +19,18 @@ public class Weapon extends Item {
 
     public int getWeaponDamage() {
         return weaponDamage;
+    }
+
+    @Override
+    public String toString() {
+        return "Weapon{" +
+                "weaponType=" + weaponType +
+                ", weaponDamage=" + weaponDamage +
+                '}';
+    }
+
+    @Override
+    public Slot getSlot() {
+        return slot;
     }
 }
