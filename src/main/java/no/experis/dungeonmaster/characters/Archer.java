@@ -3,14 +3,10 @@ package no.experis.dungeonmaster.characters;
 import no.experis.dungeonmaster.enums.ArmorType;
 import no.experis.dungeonmaster.enums.Slot;
 import no.experis.dungeonmaster.enums.WeaponType;
-import no.experis.dungeonmaster.exceptions.InvalidEquipmentException;
 import no.experis.dungeonmaster.items.Armor;
 import no.experis.dungeonmaster.items.Item;
 import no.experis.dungeonmaster.items.Weapon;
 import no.experis.dungeonmaster.utilities.HeroAttribute;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class Archer extends Hero {
     public Archer(String name) {
@@ -37,14 +33,13 @@ public class Archer extends Hero {
 
     @Override
     public HeroAttribute getLevelUpAttributeGain() {
+
         return new HeroAttribute(0, 5, 0);
     }
 
     @Override
-    public int getDamage() {
-        Weapon equippedWeapon = (Weapon) equipment.get(Slot.WEAPON);
-        int weaponDamage = (equippedWeapon != null) ? equippedWeapon.getWeaponDamage() : 1;
-        int dexterity = levelAttributes.getDexterity();
-        return (int) (weaponDamage * (1 + dexterity / 100.0));
+    public double getDamage() {
+
+        return (calculateDamage() * (1.00 + (levelAttributes.getDexterity() / 100.00)));
     }
 }

@@ -11,12 +11,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Hero {
+
+    // Fields to store state
     protected String name;
     protected int level;
     protected Map<Slot, Item> equipment;
     protected HeroAttribute levelAttributes;
 
     public Hero(String name) {
+        // Constructor to initialize new hero instance
         this.name = name;
         this.level = 1;
         this.levelAttributes = new HeroAttribute(0, 0,0);
@@ -31,6 +34,7 @@ public abstract class Hero {
     }
 
     public void levelUp() {
+        // Increases level and attributes
         HeroAttribute attributeGain = getLevelUpAttributeGain();
         levelAttributes.increaseStrength(attributeGain.getStrength());
         levelAttributes.increaseDexterity(attributeGain.getDexterity());
@@ -39,6 +43,8 @@ public abstract class Hero {
     }
 
     public void equip(Item item) throws InvalidEquipmentException {
+        // Equips an item if valid
+
         Slot slot = item.getSlot();
         if (!isValidEquipment(item)) {
             throw new InvalidEquipmentException("Invalid equipment for this hero.");
@@ -51,6 +57,7 @@ public abstract class Hero {
     }
 
     public HeroAttribute getTotalAttributes() {
+        // Calculates total attributes from level + equipment
         HeroAttribute totalAttributes = new HeroAttribute(
                 levelAttributes.getStrength(),
                 levelAttributes.getDexterity(),
@@ -71,7 +78,9 @@ public abstract class Hero {
     }
 
     public double calculateDamage() {
-        double weaponDamage = 0;
+        // Calculates hero's current damage output
+
+        int weaponDamage = 1;
         Item weapon = equipment.get(Slot.WEAPON);
         if (weapon instanceof Weapon) {
             weaponDamage = ((Weapon) weapon).getWeaponDamage();
@@ -88,16 +97,20 @@ public abstract class Hero {
             throw new IllegalStateException("Unsupported hero class");
         }
 
-        return weaponDamage * (1 + damagingAttribute / 100.0);
+        return (weaponDamage * (1.00 + (damagingAttribute / 100.00)));
     }
 
     protected abstract boolean isValidEquipment(Item item);
+    // Abstract method to check if equipment is valid, defined in the hero subclasses
 
     public abstract HeroAttribute getLevelUpAttributeGain();
+    // Abstract method to get attributes gained on level up, defined in the hero subclasses
 
-    public abstract int getDamage();
-
+    public abstract double getDamage();
+    // Abstract method to calculate final damage amount, defined in the hero subclasses
     public String display() {
+        // Returns string representation of hero details
+
         StringBuilder builder = new StringBuilder();
         builder.append("Name: ").append(name).append("\n");
         builder.append("Class: ").append(getClass().getSimpleName()).append("\n");

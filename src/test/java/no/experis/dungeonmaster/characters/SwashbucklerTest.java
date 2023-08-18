@@ -55,24 +55,28 @@ public class SwashbucklerTest {
     }
 
     @Test
-    public void testSwashbucklerLevelUp() {
-        swashbuckler.levelUp();
-        assertEquals(2, swashbuckler.getLevel());
-        HeroAttribute expectedAttributes = new HeroAttribute(0, 5, 0);
-        assertEquals(expectedAttributes, swashbuckler.getTotalAttributes());
+    public void testSwashbucklerLevelUpStrGain() {
+        HeroAttribute attributeGain = swashbuckler.getLevelUpAttributeGain();
+        assertEquals(1, attributeGain.getStrength());
+    }
+
+    @Test
+    public void testSwashbucklerLevelUpDexGain() {
+        HeroAttribute attributeGain = swashbuckler.getLevelUpAttributeGain();
+        assertEquals(4, attributeGain.getDexterity());
     }
 
     @Test
     public void testSwashbucklerCalculateDamageNoWeapon() {
 
-        assertEquals(1, swashbuckler.calculateDamage());
+        assertEquals(1.06, swashbuckler.calculateDamage());
     }
 
     @Test
     public void testSwashbucklerCalculateDamageWithWeapon() {
         Weapon sword = new Weapon(1, WeaponType.SWORD, 10, "Test Sword");
         swashbuckler.equip(sword);
-        double expectedDamage = 10 * (1 + (5 / 100.0));
+        double expectedDamage = 10 * (1 + (6 / 100.0));
         assertEquals(expectedDamage, swashbuckler.calculateDamage());
     }
 
@@ -81,7 +85,7 @@ public class SwashbucklerTest {
         Armor leatherArmor = new Armor("Leather Armor", 1, Slot.BODY, ArmorType.LEATHER,
                 new HeroAttribute(0, 1, 0));
         swashbuckler.equip(leatherArmor);
-        double expectedDamage = 1 * (1 + (5 / 100.0));
+        double expectedDamage = 1 * (1 + (7 / 100.0));
         assertEquals(expectedDamage, swashbuckler.calculateDamage());
     }
 }

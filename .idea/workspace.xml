@@ -5,26 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="285e0877-2362-495d-bd21-2eab8ab3948c" name="Changes" comment="Created Armor class and ArmorTypes enum, Heroattribute class is used to construct armorAttribute and weaponAttribute">
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/exceptions/InvalidEquipmentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/ArcherTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/BarbarianTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/SwashbucklerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/WizardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ArmorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/WeaponTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/utilities/HeroAttributeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Archer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Barbarian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Swashbuckler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Swashbuckler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/enums/AttributeType.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Weapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/ArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/ArcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/BarbarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/BarbarianTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/SwashbucklerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/SwashbucklerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/WizardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/WizardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ArmorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ArmorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/WeaponTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/WeaponTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/utilities/HeroAttributeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/utilities/HeroAttributeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +91,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,8 +109,8 @@
       <recent name="no.experis.dungeonmaster.characters" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HeroTest.testCalculateDamageWithoutWeapon">
-    <configuration name="HeroTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.HeroAttributeTest">
+    <configuration name="ArmorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -123,7 +123,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;no.experis.dungeonmaster.characters.HeroTest&quot;" />
+            <option value="&quot;no.experis.dungeonmaster.items.ArmorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,7 +134,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HeroTest.testCalculateDamageWithWeapon" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HeroAttributeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;no.experis.dungeonmaster.characters.HeroTest.testCalculateDamageWithWeapon&quot;" />
+            <option value="&quot;no.experis.dungeonmaster.utilities.HeroAttributeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,7 +158,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HeroTest.testCalculateDamageWithoutWeapon" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -171,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;no.experis.dungeonmaster.characters.HeroTest.testCalculateDamageWithoutWeapon&quot;" />
+            <option value="&quot;no.experis.dungeonmaster.items.ItemTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HeroTest.testHeroInitialization" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeaponTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -195,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;no.experis.dungeonmaster.characters.HeroTest.testHeroInitialization&quot;" />
+            <option value="&quot;no.experis.dungeonmaster.items.WeaponTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,7 +206,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HeroTest.testLevelUpAndAttributeGain" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WizardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -219,7 +219,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;no.experis.dungeonmaster.characters.HeroTest.testLevelUpAndAttributeGain&quot;" />
+            <option value="&quot;no.experis.dungeonmaster.characters.WizardTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -232,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HeroTest.testCalculateDamageWithoutWeapon" />
-        <item itemvalue="Gradle.HeroTest.testCalculateDamageWithWeapon" />
-        <item itemvalue="Gradle.HeroTest.testLevelUpAndAttributeGain" />
-        <item itemvalue="Gradle.HeroTest" />
-        <item itemvalue="Gradle.HeroTest.testHeroInitialization" />
+        <item itemvalue="Gradle.HeroAttributeTest" />
+        <item itemvalue="Gradle.WeaponTest" />
+        <item itemvalue="Gradle.ItemTest" />
+        <item itemvalue="Gradle.ArmorTest" />
+        <item itemvalue="Gradle.WizardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +251,7 @@
       <workItem from="1691758161234" duration="1330000" />
       <workItem from="1692013648580" duration="5195000" />
       <workItem from="1692103008376" duration="2382000" />
+      <workItem from="1692377904729" duration="11997000" />
     </task>
     <task id="LOCAL−00001" summary="Added project structure, created classes with constructors.">
       <option name="closed" value="true" />
@@ -287,16 +288,5 @@
     <MESSAGE value="Added project structure, created classes with constructors." />
     <MESSAGE value="Created Armor class and ArmorTypes enum, Heroattribute class is used to construct armorAttribute and weaponAttribute" />
     <option name="LAST_COMMIT_MESSAGE" value="Created Armor class and ArmorTypes enum, Heroattribute class is used to construct armorAttribute and weaponAttribute" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -4,7 +4,7 @@ import no.experis.dungeonmaster.enums.Slot;
 import no.experis.dungeonmaster.enums.WeaponType;
 
 public class Weapon extends Item {
-    private final WeaponType weaponType;
+    private final WeaponType weaponType; // Type of weapon in WeaponType enum
     private final int weaponDamage;
 
     public Weapon(int requiredLevel, WeaponType weaponType, int weaponDamage, String name) {

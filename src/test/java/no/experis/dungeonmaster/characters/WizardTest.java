@@ -15,7 +15,8 @@ public class WizardTest {
 
     @BeforeEach
     public void setUp() {
-        wizard = new Wizard("Test Wizard");
+        wizard = new Wizard(
+                "Test Wizard");
     }
 
     @Test
@@ -26,7 +27,7 @@ public class WizardTest {
     @Test
     public void testWizardLevelUp() {
         HeroAttribute attributeGain = wizard.getLevelUpAttributeGain();
-        assertEquals(1, attributeGain.getIntelligence());
+        assertEquals(5, attributeGain.getIntelligence());
     }
 
     @Test
@@ -55,7 +56,8 @@ public class WizardTest {
 
     @Test
     public void testWizardCalculateDamageNoWeapon() {
-        assertEquals(1.01, wizard.calculateDamage(), 0.01);
+
+        assertEquals(1.08, wizard.calculateDamage(), 0.01);
     }
 
     @Test

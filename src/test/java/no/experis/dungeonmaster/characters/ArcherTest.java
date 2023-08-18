@@ -28,7 +28,7 @@ public class ArcherTest {
     @Test
     public void testArcherLevelUp() {
         HeroAttribute attributeGain = archer.getLevelUpAttributeGain();
-        assertEquals(1, attributeGain.getStrength());
+        assertEquals(5, attributeGain.getDexterity());
     }
 
     @Test

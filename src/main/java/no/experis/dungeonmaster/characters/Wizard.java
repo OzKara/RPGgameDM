@@ -36,7 +36,8 @@ public class Wizard extends Hero {
     }
 
     @Override
-    public int getDamage() {
-        return (int) (calculateDamage() * (1 + levelAttributes.getIntelligence() / 100.0));
+    public double getDamage() {
+
+        return (calculateDamage() * (1.00 + (levelAttributes.getIntelligence() / 100.00)));
     }
 }

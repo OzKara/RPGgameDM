@@ -8,6 +8,7 @@ public class HeroAttribute {
     private int dexterity;
 
     public HeroAttribute(int strength, int dexterity, int intelligence) {
+        // Constructor initializes attributes
         this.strength = strength;
         this.dexterity = dexterity;
         this.intelligence = intelligence;
@@ -29,15 +30,16 @@ public class HeroAttribute {
     }
 
     public void increaseStrength(int amount) {
+        // Increases strength by amount
         strength += amount;
     }
 
     public void increaseDexterity(int amount) {
-
+        // Increases dexterity by amount
         dexterity += amount;
     }
 
-    public void increaseIntelligence(int amount) {
+    public void increaseIntelligence(int amount) { // Increases intelligence by amount
 
         intelligence += amount;
     }

@@ -1,16 +1,11 @@
 package no.experis.dungeonmaster.characters;
 
 import no.experis.dungeonmaster.enums.ArmorType;
-import no.experis.dungeonmaster.enums.Slot;
 import no.experis.dungeonmaster.enums.WeaponType;
-import no.experis.dungeonmaster.exceptions.InvalidEquipmentException;
 import no.experis.dungeonmaster.items.Armor;
 import no.experis.dungeonmaster.items.Item;
 import no.experis.dungeonmaster.items.Weapon;
 import no.experis.dungeonmaster.utilities.HeroAttribute;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class Barbarian extends Hero {
     public Barbarian(String name) {
@@ -40,8 +35,7 @@ public class Barbarian extends Hero {
     }
 
     @Override
-    public int getDamage() {
-        int strength = levelAttributes.getStrength();
-        return (int) (calculateDamage() * (1 + strength / 100.0));
+    public double getDamage() {
+        return (calculateDamage() * (1.00 + (levelAttributes.getStrength() / 100.00)));
     }
 }

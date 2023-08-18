@@ -37,8 +37,7 @@ public class Swashbuckler extends Hero {
     }
 
     @Override
-    public int getDamage() {
-        int dexterity = levelAttributes.getDexterity();
-        return (int) (calculateDamage() * (1 + dexterity / 100.0));
+    public double getDamage() {
+        return (calculateDamage() * (1.00 + (double) (levelAttributes.getDexterity() / 100.00)));
     }
 }

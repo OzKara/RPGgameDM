@@ -6,8 +6,8 @@ import no.experis.dungeonmaster.utilities.HeroAttribute;
 
 public class Armor extends Item {
 
-    private final HeroAttribute armorAttribute;
-    private final ArmorType armorType;
+    private final HeroAttribute armorAttribute; // Armor bonuses
+    private final ArmorType armorType; // Type of armor in ArmorType enum
     public Armor(String name, int requiredLevel, Slot slot, ArmorType armorType, HeroAttribute armorAttribute) {
         super(name, requiredLevel, slot);
         this.armorAttribute = armorAttribute;

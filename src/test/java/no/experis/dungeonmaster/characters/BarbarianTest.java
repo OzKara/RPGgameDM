@@ -15,18 +15,26 @@ public class BarbarianTest {
 
     @BeforeEach
     public void setUp() {
+
         barbarian = new Barbarian("Test Barbarian");
     }
 
     @Test
     public void testBarbarianCreation() {
+
         assertEquals("Test Barbarian", barbarian.getName());
     }
 
     @Test
-    public void testBarbarianLevelUp() {
+    public void testBarbarianLevelUpStrGain() {
         HeroAttribute attributeGain = barbarian.getLevelUpAttributeGain();
-        assertEquals(1, attributeGain.getStrength());
+        assertEquals(3, attributeGain.getStrength());
+    }
+
+    @Test
+    public void testBarbarianLevelUpDexGain() {
+        HeroAttribute attributeGain = barbarian.getLevelUpAttributeGain();
+        assertEquals(2, attributeGain.getDexterity());
     }
 
     @Test
@@ -55,7 +63,8 @@ public class BarbarianTest {
 
     @Test
     public void testBarbarianCalculateDamageNoWeapon() {
-        assertEquals(1.06, barbarian.calculateDamage(), 0.01);
+
+        assertEquals(1.05, barbarian.calculateDamage(), 0.01);
     }
 
     @Test
@@ -74,6 +83,7 @@ public class BarbarianTest {
 
     @Test
     public void testBarbarianDisplay() {
+
         assertNotNull(barbarian.display());
     }
 }
