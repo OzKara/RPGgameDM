@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="285e0877-2362-495d-bd21-2eab8ab3948c" name="Changes" comment="Created Armor class and ArmorTypes enum, Heroattribute class is used to construct armorAttribute and weaponAttribute">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Archer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Barbarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Swashbuckler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Swashbuckler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Armor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/experis/dungeonmaster/utilities/HeroAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/ArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/ArcherTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/BarbarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/BarbarianTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/HeroTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/SwashbucklerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/SwashbucklerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/WizardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/characters/WizardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ArmorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ArmorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/ItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/WeaponTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/items/WeaponTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/utilities/HeroAttributeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/experis/dungeonmaster/utilities/HeroAttributeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +55,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -96,6 +83,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -252,6 +240,7 @@
       <workItem from="1692013648580" duration="5195000" />
       <workItem from="1692103008376" duration="2382000" />
       <workItem from="1692377904729" duration="11997000" />
+      <workItem from="1692599162956" duration="1351000" />
     </task>
     <task id="LOCAL−00001" summary="Added project structure, created classes with constructors.">
       <option name="closed" value="true" />
